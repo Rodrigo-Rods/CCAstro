@@ -12,7 +12,7 @@ const posts = await getCollection("posts");
 	<Main>
 		<H1 text="Welcome to the Rhythm Nation Blog." />
 		{
-			posts.map((post: any) => (
+			posts.map((post) => (
 				<PostList posts={posts}/>
 			))
 		}

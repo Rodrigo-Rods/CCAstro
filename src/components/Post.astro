@@ -8,18 +8,19 @@ type Props = {
 
 const { post } = Astro.props;
 
+console.log(post.data.image)
+
 ---
 
 <article>
 	<a
-		href={`/blog/${post.slug}`}	aria-label={`Read more about ${post.data.title}`}
+		href={`/blog/${post.slug}`}	
 	>
 		<Image
 			src={post.data.image}
-			alt={post.data.title}
 			width={600}
 			height={600 / 1.5}
-			format="webp"
+			alt={post.data.title}			
 			class="rounded-2xl shadow-xl mb-6 aspect-thumbnail object-cover"
 		/>
 	</a>

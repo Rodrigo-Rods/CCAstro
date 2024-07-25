@@ -5,3 +5,5 @@ export default defineConfig({
 	output: "hybrid",
 	integrations: [tailwind()],
 });
+
+import { defineConfig } from "astro/config";
